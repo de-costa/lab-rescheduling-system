@@ -60,7 +60,7 @@ $requests = $stmt2->get_result();
         <h1>Coordinator Dashboard</h1>
         <p>Welcome, <?php echo htmlspecialchars($user['Fname'] . ' ' . $user['Lname']); ?></p>
         <div>
-            <a href="view_lab_schedule.php" class="btn schedule-btn">View Lab Schedule</a>
+            
             <a href="logout.php" class="logout-btn">Logout</a>
         </div>
     </header>
