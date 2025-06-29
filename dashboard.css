@@ -1,0 +1,190 @@
+/* Reset & Base Styles */
+* {
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f9fafb;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Container Styling */
+.container {
+    max-width: 1050px;
+    margin: 2rem auto;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.logout-btn {
+    background-color: #e53e3e;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+    background-color: #c53030;
+}
+
+/* Section Title */
+section h2 {
+    margin-bottom: 1rem;
+    color: #2d3748;
+    font-weight: 600;
+}
+
+/* Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #2b6cb0;
+    color: #fff;
+}
+
+thead th {
+    padding: 12px 15px;
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f1f5f9;
+}
+
+tbody td {
+    padding: 12px 15px;
+    vertical-align: top;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* Button Styling */
+.btn {
+    padding: 6px 10px;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    display: inline-block;
+    margin: 2px;
+    color: white;
+    white-space: nowrap;
+    width: 90px;       /* Make both buttons same width */
+    text-align: center;
+}
+
+
+/* Accept Button */
+
+
+
+.accept-btn {
+    background-color: #38a169;
+    box-shadow: 0 2px 4px rgba(56, 161, 105, 0.3);
+}
+
+.accept-btn:hover,
+.accept-btn:focus {
+    background-color: #2f855a;
+    box-shadow: 0 4px 8px rgba(47, 133, 90, 0.5);
+    height: 2px;
+
+}
+
+/* Reject Button */
+.reject-btn {
+    background-color: #e53e3e;
+    box-shadow: 0 2px 4px rgba(229, 62, 62, 0.3);
+}
+
+.reject-btn:hover,
+.reject-btn:focus {
+    background-color: #c53030;
+    box-shadow: 0 4px 8px rgba(197, 48, 48, 0.5);
+}
+
+.schedule-btn {
+    background-color: #4a90e2;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+.schedule-btn:hover {
+    background-color: #357ABD;
+}
+
+
+/* Form inside table cell */
+td form {
+    display: inline-block;
+}
+
+/* Status Badge */
+.status {
+    font-weight: 700;
+    padding: 4px 8px;
+    border-radius: 4px;
+    color: white;
+    text-align: center;
+    width: 100px;
+    text-transform: capitalize;
+}
+
+.status.pending {
+    background-color: #d69e2e;
+}
+
+.status.accepted {
+    background-color: #38a169;
+}
+
+.status.rejected {
+    background-color: #e53e3e;
+}
+
+/* Links */
+a {
+    color: #3182ce;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Success message */
+.success-message {
+    color: green;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
